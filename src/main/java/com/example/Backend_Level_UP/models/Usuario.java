@@ -1,5 +1,5 @@
 package com.example.Backend_Level_UP.models;
-
+import java.util.Set;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -23,5 +23,5 @@ public class Usuario {
     private String rol;
 
     @OneToMany(mappedBy = "Usuario")
-    private set<Boleta> boletas;
+    private Set<Boleta> boletas;
 }
